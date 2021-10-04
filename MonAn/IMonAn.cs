@@ -6,12 +6,12 @@ using System.Text;
 
 namespace FactoryMethod.MonAn
 {
-    public abstract class MonAn
+    interface MonAn
     {
       protected float Gia;
       protected string Loai;
 
-      public abstract MonAn LuaChon();
+      string LuaChon();
       
     }
 }

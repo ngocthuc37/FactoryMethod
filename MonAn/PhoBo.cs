@@ -5,7 +5,7 @@ using System.Text;
 
 namespace  FactoryMethod.MonAn
 {
-    public class PhoBo : MonAn
+    public class PhoBo : MonKho
     { 
 
 
@@ -26,10 +26,10 @@ namespace  FactoryMethod.MonAn
             Gia = _Gia;
         }
 
-        public override MonAn LuaChon()
+        public override string LuaChon()
         {
-            MonAn monan = new PhoBo();
-            return monan;
+            //MonAn monan = new PhoBo();
+            return "Pho bo";
         }
     }
 }

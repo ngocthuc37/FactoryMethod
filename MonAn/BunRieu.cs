@@ -5,7 +5,7 @@ using System.Text;
 
 namespace  FactoryMethod.MonAn
 {
-    public class BunRieu : MonAn
+    public class BunRieu : MonKho
     { 
 
 
@@ -26,10 +26,10 @@ namespace  FactoryMethod.MonAn
             Gia = _Gia;
         }
 
-        public override MonAn LuaChon()
+        public override string LuaChon()
         {
-            MonAn monan = new BunRieu();
-            return monan;
+            //MonAn monan = new BunRieu();
+            return "Bun Rieu";
         }
     }
 }

@@ -1,12 +1,12 @@
 using FactoryMethod.MonAn;
-using System;
 using System.Collections.Generic;
+using System;
 using System.Text;
 
 namespace FactoryMethod.Factory
-{
-    interface IMonAnFactory
+{ 
+    abstract class AbstractMonAnFactory : IMonAnFactory
     {
-        MonAn createMonAn();
+        public abstract MonAn createMonAn();
     }
 }

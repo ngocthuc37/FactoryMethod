@@ -5,7 +5,7 @@ using System.Text;
 
 namespace  FactoryMethod.MonAn
 {
-    public class CamEp : MonAn
+    public class CamEp : MonNuoc
     { 
 
 
@@ -26,10 +26,10 @@ namespace  FactoryMethod.MonAn
             Gia = _Gia;
         }
 
-        public override MonAn LuaChon()
+        public override string LuaChon()
         {
-            MonAn monan = new CamEp();
-            return monan;
+            //MonAn monan = new CamEp();
+            return "Cam ep";
         }
     }
 }

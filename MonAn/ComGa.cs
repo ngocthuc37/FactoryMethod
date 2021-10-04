@@ -5,7 +5,7 @@ using System.Text;
 
 namespace  FactoryMethod.MonAn
 {
-    public class ComGa : MonAn
+    public class ComGa : MonKho
     { 
 
 
@@ -26,10 +26,10 @@ namespace  FactoryMethod.MonAn
             Gia = _Gia;
         }
 
-        public override MonAn LuaChon()
+        public override string LuaChon()
         {
-            MonAn monan = new ComGa();
-            return monan;
+            //MonAn monan = new ComGa();
+            return "Com ga";
         }
     }
 }

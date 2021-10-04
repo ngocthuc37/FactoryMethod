@@ -5,7 +5,7 @@ using System.Text;
 
 namespace  FactoryMethod.MonAn
 {
-    public class DuaXay : MonAn
+    public class DuaXay : MonNuoc
     { 
 
 
@@ -26,10 +26,10 @@ namespace  FactoryMethod.MonAn
             Gia = _Gia;
         }
 
-        public override MonAn LuaChon()
+        public override string LuaChon()
         {
-            MonAn monan = new DuaXay();
-            return monan;
+            //MonAn monan = new DuaXay();
+            return "Dua xay";
         }
     }
 }
